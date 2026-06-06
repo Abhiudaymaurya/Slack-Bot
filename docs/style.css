@@ -180,3 +180,134 @@ footer {
     display: none;
   }
 }
+
+/* --- Stats Section --- */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 8%;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Architecture Section --- */
+.architecture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.architecture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Live Demonstrations Section --- */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.demo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.demo-grid img:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Built With Section (Tech Stack) --- */
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.tech-stack span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+/* --- Call To Action (CTA) Section --- */
+.cta {
+  text-align: center;
+  padding: 6rem 8%;
+  background: radial-gradient(
+    circle at center,
+    rgba(124, 58, 237, 0.15),
+    transparent 60%
+  );
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+.hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 15px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: block;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+  object-fit: contain;
+}

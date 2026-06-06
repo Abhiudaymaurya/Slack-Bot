@@ -1,8 +1,12 @@
-# <p align="center">
+# 🤖 SlackyBOT
 
-  <img src="public/images/logo/SlackyBOT.png" width="10">
-  SlackyBOT
-</p>
+### Open-Source AI-Powered Slack Assistant
+
+![Node.js](https://img.shields.io/badge/Node.js-22-green)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini-orange)
+![License](https://img.shields.io/badge/License-MIT-purple)
+
+---
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762547/slack-bot-presntation_olitrp.gif)
 
@@ -79,15 +83,15 @@ SlackyBOT receives commands from Slack, routes requests to the appropriate API, 
 
 ### 🌤 Weather Report
 
-![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762743/hbsc-weather_rmrufy.gif)
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765155/hbsc-weather_zcu9og.gif)
 
 ### 🎭 Meme Generator
 
-![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762500/hbsc-meme_nyigkk.gif)
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765154/hbsc-meme_vdhrly.gif)
 
 ### 🧠 AI Assistant Demo
 
-![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762570/hbsc-gemini_ek26id.gif)
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765156/hbsc-gemini_a3wxyc.gif)
 
 ### 😂 Meme Response Example
 
@@ -308,5 +312,7 @@ AI-generated assets are used solely for presentation and documentation purposes 
 ## Made by Rivaan Maurya (Abhiuday Maurya)
 
 ## 📄 License
+
+https://github.com/Abhiudaymaurya/Slack-Bot/blob/main/LICENSE.txt
 
 This project is licensed under the MIT License.
