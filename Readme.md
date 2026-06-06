@@ -1,6 +1,17 @@
-# 🤖 SlackyBOT
+# <p align="center">
 
-SlackyBOT is a feature-rich Slack bot built with **Node.js**, **Slack Bolt**, and **Google Gemini AI**. It combines productivity tools, AI-powered assistance, weather information, calculators, and fun commands into a single Slack experience.
+  <img src="public/images/logo/SlackyBOT.png" width="10">
+  SlackyBOT
+</p>
+
+<p align="center">
+  <img src="public/images/logo/slackybot-marketing-presentation.gif.gif" width="800">
+</p>
+<p align="center">
+  <img src="public/images/logo/SlackyBOT.png" width="800">
+</p>
+
+SlackyBOT is a feature-rich Slack bot built with **Node.js**, **Slack Bolt**, and **Google Gemini API**. It combines productivity tools, AI-powered assistance, weather information, calculators, and fun commands into a single Slack experience.
 
 Built as part of the **StarDance Hack Club** challenge.
 
@@ -45,21 +56,49 @@ Built as part of the **StarDance Hack Club** challenge.
 
 ---
 
-## 📸 Preview
+---
 
-### Gemini AI
+## 🏗 Architecture
 
-![Gemini Demo](images/gemini-demo.png)
+<p align="center">
+  <img src="public/images/logo/diagram.png" width="100%">
+</p>
 
-### Weather Command
-
-![Weather Demo](images/weather-demo.png)
-
-### Meme Command
-
-![Meme Demo](images/meme-demo.png)
+SlackyBOT receives commands from Slack, routes requests to the appropriate API, and returns formatted responses directly inside the Slack workspace.
 
 ---
+
+## 📸 Command Previews
+
+### 📋 Help Command
+
+![Help Command](public/images/logo/help-command-image.png)
+
+### 🤖 Gemini AI Response
+
+![Gemini Response](public/images/logo/Gemini-response-image.png)
+
+### 🌤 Weather Report
+
+<p align="center">
+  <img src="public/images/logo/hbsc-weather.gif" width="900">
+</p>
+
+### 🎭 Meme Generator
+
+<p align="center">
+  <img src="public/images/logo/hbsc-meme.gif" width="900">
+</p>
+
+### 🧠 AI Assistant Demo
+
+<p align="center">
+  <img src="public/images/logo/hbsc-gemini.gif" width="900">
+</p>
+
+### 😂 Meme Response Example
+
+![Meme Response](public/images/logo/meme-response-image.png)
 
 ## 📋 Available Commands
 
@@ -77,6 +116,46 @@ Built as part of the **StarDance Hack Club** challenge.
 | `/hbsc-coinflip`          | Flip a coin                    |
 | `/hbsc-weather <city>`    | Get weather information        |
 | `/hbsc-gemini <question>` | Ask Gemini AI                  |
+
+---
+
+## 🌐 Live Demo & Testing
+
+A public demo workspace is available for testing SlackyBOT.
+
+### Demo Website
+
+https://abhiudaymaurya.github.io/Slack-Bot/
+
+### How to Test
+
+1. Open the demo website.
+2. Click **Join Demo Workspace**.
+3. Join the Slack workspace using your Slack account.
+4. Open the **#slackybot-demo-stardance** channel.
+5. Try the available slash commands:
+
+```txt
+/hbsc-help
+/hbsc-weather london
+/hbsc-gemini explain recursion
+/hbsc-joke
+/hbsc-funfact
+/hbsc-meme
+/hbsc-coinflip
+```
+
+### You can also test any command listed in the Commands section above.
+
+### Notes
+
+- Responses are visible only to the user who runs the command.
+- AI responses are powered by Google Gemini.
+- Weather data is provided by Open-Meteo.
+- The demo is hosted on Nest provided by Hack Club.
+- AI and weather responses may occasionally be delayed or unavailable due to free API usage limits.
+
+Happy testing! 🚀
 
 ---
 
@@ -125,6 +204,47 @@ npm start
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve SlackyBOT, feel free to:
+
+- Report bugs
+- Suggest new features
+- Improve documentation
+- Refactor or optimize code
+- Add new Slack commands and integrations
+
+### Getting Started
+
+1. Fork the repository
+2. Create a new branch
+
+```bash
+git checkout -b feature/my-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add my feature"
+```
+
+4. Push to your fork
+
+```bash
+git push origin feature/my-feature
+```
+
+5. Open a Pull Request
+
+Please ensure your code follows existing project conventions and includes clear commit messages.
+
+Every contribution helps make SlackyBOT better. 🚀
+
+---
+
 ## 🎯 Project Goals
 
 This project was created to learn:
@@ -149,13 +269,46 @@ This project was created to learn:
 
 ---
 
+---
+
+## 🎬 Live Demonstrations
+
+- Gemini AI Integration
+- Weather Reports
+- Meme Generation
+- Interactive Slash Commands
+- Slack Workspace Automation
+
 ## 🚀 Future Plans
 
-- Nest Deployment (24/7 Hosting)
 - Better Slack UI Blocks
 - AI Image Features
 - User Preferences
-- More Utility Commands
+- More Useful Utility Commands
+
+---
+
+---
+
+## 📝 AI Usage Disclosure
+
+This project's source code, application logic, command implementation, and overall architecture were designed and developed by **Abhiuday Maurya (Rivaan Maurya)**.
+
+AI tools were used only as development assistants for:
+
+- Learning concepts
+- Generating a small number of visual assets, including the architecture diagram and promotional images
+
+All final implementation, integration, testing, configuration, and project decisions were completed by the author.
+
+This project was built using official documentation, including:
+
+- Slack Bolt Documentation
+- Google Gemini Documentation
+- Open-Meteo Documentation
+- Node.js Documentation
+
+AI-generated assets are used solely for presentation and documentation purposes and are not part of the application's core functionality.
 
 ---
 
