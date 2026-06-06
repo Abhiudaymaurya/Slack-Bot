@@ -4,9 +4,8 @@
   SlackyBOT
 </p>
 
-<p align="center">
-  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762547/slack-bot-presntation_olitrp.gif" width="800">
-</p>
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762547/slack-bot-presntation_olitrp.gif)
+
 <p align="center">
   <img src="public/images/logo/SlackyBOT.png" width="800">
 </p>
@@ -80,21 +79,15 @@ SlackyBOT receives commands from Slack, routes requests to the appropriate API, 
 
 ### 🌤 Weather Report
 
-<p align="center">
-  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762743/hbsc-weather_rmrufy.gif" width="900">
-</p>
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762743/hbsc-weather_rmrufy.gif)
 
 ### 🎭 Meme Generator
 
-<p align="center">
-  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762500/hbsc-meme_nyigkk.gif" width="900">
-</p>
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762500/hbsc-meme_nyigkk.gif)
 
 ### 🧠 AI Assistant Demo
 
-<p align="center">
-  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762570/hbsc-gemini_ek26id.gif" width="900">
-</p>
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762570/hbsc-gemini_ek26id.gif)
 
 ### 😂 Meme Response Example
 
