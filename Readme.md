@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="public/images/logo/slackybot-marketing-presentation.gif.gif" width="800">
+  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762547/slack-bot-presntation_olitrp.gif" width="800">
 </p>
 <p align="center">
   <img src="public/images/logo/SlackyBOT.png" width="800">
@@ -81,19 +81,19 @@ SlackyBOT receives commands from Slack, routes requests to the appropriate API, 
 ### 🌤 Weather Report
 
 <p align="center">
-  <img src="public/images/logo/hbsc-weather.gif" width="900">
+  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762743/hbsc-weather_rmrufy.gif" width="900">
 </p>
 
 ### 🎭 Meme Generator
 
 <p align="center">
-  <img src="public/images/logo/hbsc-meme.gif" width="900">
+  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762500/hbsc-meme_nyigkk.gif" width="900">
 </p>
 
 ### 🧠 AI Assistant Demo
 
 <p align="center">
-  <img src="public/images/logo/hbsc-gemini.gif" width="900">
+  <img src="https://res.cloudinary.com/danpdjryt/image/upload/v1780762570/hbsc-gemini_ek26id.gif" width="900">
 </p>
 
 ### 😂 Meme Response Example
