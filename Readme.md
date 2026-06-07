@@ -8,7 +8,7 @@
 
 ---
 
-![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780762547/slack-bot-presntation_olitrp.gif)
+![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780817014/slack-bot-presntation_olitrp.gif)
 
 <p align="center">
   <img src="public/images/logo/SlackyBOT.png" width="800">
@@ -239,6 +239,28 @@ git push origin feature/my-feature
 Please ensure your code follows existing project conventions and includes clear commit messages.
 
 Every contribution helps make SlackyBOT better. 🚀
+
+---
+
+## Deployment
+
+SlackyBOT is currently deployed on Hack Club Nest and remains online for public testing.
+
+Reviewers can access the demo workspace at any time while the project is under review.
+
+---
+
+## Slack Permissions / Scopes
+
+SlackyBOT uses the following scopes:
+
+- commands
+- chat:write
+- app_mentions:read
+
+These permissions are required to process slash commands, respond to users, detect mentions, and read messages in channels where the bot is installed.
+
+No administrative or workspace-management permissions are requested.
 
 ---
 
