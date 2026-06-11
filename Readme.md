@@ -1,6 +1,6 @@
-# 🤖 SlackyBOT
+# SlackyBOT
 
-### Open-Source AI-Powered Slack Assistant
+## This project was built during the **StarDance Hack Club** challenge.
 
 ![Node.js](https://img.shields.io/badge/Node.js-22-green)
 ![Gemini AI](https://img.shields.io/badge/Google-Gemini-orange)
@@ -8,70 +8,34 @@
 
 ---
 
-![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780817014/slack-bot-presntation_olitrp.gif)
-
 <p align="center">
   <img src="public/images/logo/SlackyBOT.png" width="800">
 </p>
 
-SlackyBOT is a feature-rich Slack bot built with **Node.js**, **Slack Bolt**, and **Google Gemini API**. It combines productivity tools, AI-powered assistance, weather information, calculators, and fun commands into a single Slack experience.
+I made SlackyBOT because I wanted to understand how Slack apps and slash commands work. Along the way, I added features like Gemini AI, weather updates, memes, jokes, and other small utilities just for fun and learning.
 
-Built as part of the **StarDance Hack Club** challenge.
+## Developed as part of the **StarDance Hack Club** challenge.
 
----
+## 📋 Available Commands
 
-## ✨ Features
-
-### 🤖 AI Assistant
-
-- Ask questions directly from Slack using Google Gemini AI.
-- Get instant AI-generated responses without leaving your workspace.
-
-### 🌤 Weather Reports
-
-- Search weather information for any city.
-- Includes:
-  - Temperature
-  - Feels-like temperature
-  - Humidity
-  - Wind speed
-  - Day/Night status
-  - Weather advice
-
-### 🧮 Calculator Utilities
-
-- Addition
-- Subtraction
-- Multiplication
-- Division
-
-### 🎭 Fun Commands
-
-- Random jokes
-- Random fun facts
-- Random memes
-- Coin flips
-
-### ⚡ Utility Commands
-
-- Help command
-- Ping/latency checker
+| Command                   | Description                    |
+| ------------------------- | ------------------------------ |
+| `/hbsc-help`              | Display all available commands |
+| `/hbsc-ping`              | Check bot latency              |
+| `/hbsc-sum <a> <b>`       | Add two numbers                |
+| `/hbsc-minus <a> <b>`     | Subtract two numbers           |
+| `/hbsc-multiply <a> <b>`  | Multiply two numbers           |
+| `/hbsc-divide <a> <b>`    | Divide two numbers             |
+| `/hbsc-joke`              | Get a random joke              |
+| `/hbsc-funfact`           | Get a random fun fact          |
+| `/hbsc-meme`              | Generate a random meme         |
+| `/hbsc-coinflip`          | Flip a coin                    |
+| `/hbsc-weather <city>`    | Get weather information        |
+| `/hbsc-gemini <question>` | Ask Gemini AI                  |
 
 ---
 
----
-
-## 🏗 Architecture
-
-<p align="center">
-  <img src="public/images/logo/diagram.png" width="100%">
-</p>
-
-SlackyBOT receives commands from Slack, routes requests to the appropriate API, and returns formatted responses directly inside the Slack workspace.
-
----
-
-## 📸 Command Previews
+## 📸 Special Command Previews
 
 ### 📋 Help Command
 
@@ -97,25 +61,6 @@ SlackyBOT receives commands from Slack, routes requests to the appropriate API, 
 
 ![Meme Response](public/images/logo/meme-response-image.png)
 
-## 📋 Available Commands
-
-| Command                   | Description                    |
-| ------------------------- | ------------------------------ |
-| `/hbsc-help`              | Display all available commands |
-| `/hbsc-ping`              | Check bot latency              |
-| `/hbsc-sum <a> <b>`       | Add two numbers                |
-| `/hbsc-minus <a> <b>`     | Subtract two numbers           |
-| `/hbsc-multiply <a> <b>`  | Multiply two numbers           |
-| `/hbsc-divide <a> <b>`    | Divide two numbers             |
-| `/hbsc-joke`              | Get a random joke              |
-| `/hbsc-funfact`           | Get a random fun fact          |
-| `/hbsc-meme`              | Generate a random meme         |
-| `/hbsc-coinflip`          | Flip a coin                    |
-| `/hbsc-weather <city>`    | Get weather information        |
-| `/hbsc-gemini <question>` | Ask Gemini AI                  |
-
----
-
 ## 🌐 Live Demo & Testing
 
 A public demo workspace is available for testing SlackyBOT.
@@ -124,35 +69,20 @@ A public demo workspace is available for testing SlackyBOT.
 
 https://abhiudaymaurya.github.io/Slack-Bot/
 
-### How to Test
+### Want to test it?
 
-1. Open the demo website.
-2. Click **Join Demo Workspace**.
-3. Join the Slack workspace using your Slack account.
-4. Open the **#slackybot-demo-stardance** channel.
-5. Try the available slash commands:
-
-```txt
-/hbsc-help
-/hbsc-weather london
-/hbsc-gemini explain recursion
-/hbsc-joke
-/hbsc-funfact
-/hbsc-meme
-/hbsc-coinflip
-```
-
-### You can also test any command listed in the Commands section above.
+- Open the demo website.
+- Join the Slack workspace.
+- Head over to **#slackybot-demo-stardance**.
+- Type a few commands and have fun experimenting with the bot!
 
 ### Notes
 
-- Responses are visible only to the user who runs the command.
-- AI responses are powered by Google Gemini.
-- Weather data is provided by Open-Meteo.
-- The demo is hosted on Nest provided by Hack Club.
-- AI and weather responses may occasionally be delayed or unavailable due to free API usage limits.
+- Most commands reply only to the person who runs them.
+- Gemini and weather commands may take a few seconds to respond.
+- Since I'm using free APIs, some features might occasionally be unavailable.
 
-Happy testing! 🚀
+Have fun trying out SlackyBOT! 🚀
 
 ---
 
@@ -171,7 +101,7 @@ cd Slack-Bot
 npm install
 ```
 
-### 3. Configure environment variables
+### 3. add environment variables
 
 Create a `.env` file:
 
@@ -193,7 +123,7 @@ npm start
 
 - Node.js
 - Slack Bolt
-- Google Gemini AI
+- Google Gemini API
 - Axios
 - Open-Meteo API
 - Meme API
@@ -201,70 +131,7 @@ npm start
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-If you'd like to improve SlackyBOT, feel free to:
-
-- Report bugs
-- Suggest new features
-- Improve documentation
-- Refactor or optimize code
-- Add new Slack commands and integrations
-
-### Getting Started
-
-1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature/my-feature
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Add my feature"
-```
-
-4. Push to your fork
-
-```bash
-git push origin feature/my-feature
-```
-
-5. Open a Pull Request
-
-Please ensure your code follows existing project conventions and includes clear commit messages.
-
-Every contribution helps make SlackyBOT better. 🚀
-
----
-
-## Deployment
-
-SlackyBOT is currently deployed on Hack Club Nest and remains online for public testing.
-
-Reviewers can access the demo workspace at any time while the project is under review.
-
----
-
-## Slack Permissions / Scopes
-
-SlackyBOT uses the following scopes:
-
-- commands
-- chat:write
-- app_mentions:read
-
-These permissions are required to process slash commands, respond to users, detect mentions, and read messages in channels where the bot is installed.
-
-No administrative or workspace-management permissions are requested.
-
----
-
-## 🎯 Project Goals
+## Why I create this project?
 
 This project was created to learn:
 
@@ -273,11 +140,11 @@ This project was created to learn:
 - AI Integration
 - Error Handling
 - Async JavaScript
-- Real-world Backend Development
+- Deploying and hosting applications using Hack Club Nest
 
 ---
 
-## 🙏 Credits
+## Resources I Used
 
 - Google Gemini Documentation
 - Slack Bolt Documentation
@@ -288,53 +155,10 @@ This project was created to learn:
 
 ---
 
----
-
-## 🎬 Live Demonstrations
-
-- Gemini AI Integration
-- Weather Reports
-- Meme Generation
-- Interactive Slash Commands
-- Slack Workspace Automation
-
-## 🚀 Future Plans
-
-- Better Slack UI Blocks
-- AI Image Features
-- User Preferences
-- More Useful Utility Commands
-
----
-
----
-
-## 📝 AI Usage Disclosure
-
-This project's source code, application logic, command implementation, and overall architecture were designed and developed by **Abhiuday Maurya (Rivaan Maurya)**.
-
-AI tools were used only as development assistants for:
-
-- Learning concepts
-- Generating a small number of visual assets, including the architecture diagram and promotional images
-
-All final implementation, integration, testing, configuration, and project decisions were completed by the author.
-
-This project was built using official documentation, including:
-
-- Slack Bolt Documentation
-- Google Gemini Documentation
-- Open-Meteo Documentation
-- Node.js Documentation
-
-AI-generated assets are used solely for presentation and documentation purposes and are not part of the application's core functionality.
-
----
-
 ## Made by Rivaan Maurya (Abhiuday Maurya)
 
 ## 📄 License
 
 https://github.com/Abhiudaymaurya/Slack-Bot/blob/main/LICENSE.txt
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License 😊.

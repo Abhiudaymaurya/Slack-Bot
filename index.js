@@ -6,17 +6,21 @@ const axios = require("axios");
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_TOKEN });
 
 const app = new App({
-  token: process.env.SLACK_BOT_TOKEN,
-  appToken: process.env.SLACK_APP_TOKEN,
-  socketMode: true,
+  token: process.env.SLACK_BOT_TOKEN, //Slack bot token from ENV 😊
+  appToken: process.env.SLACK_APP_TOKEN, // App token from env
+  socketMode: true, // Need Socket Mode For real time chats
 });
 
+
+//basic command to test ping same as in tutorial by Stardance
 app.command("/hbsc-ping", async ({ command, ack, respond }) => {
   const start = Date.now();
   await ack();
   const latency = Date.now() - start;
   await respond({ text: `Pong!\nLatency: ${latency}ms` });
 });
+
+//basic help function to show , how much command i have
 
 app.command("/hbsc-help", async ({ ack, respond }) => {
   await ack();
@@ -50,6 +54,8 @@ Made by Rivaan Maurya 🚀`
   });
 });
 
+//basic calculator function
+
 app.command("/hbsc-minus", async ({ command, ack, respond }) => {
   await ack();
 
@@ -65,8 +71,7 @@ app.command("/hbsc-minus", async ({ command, ack, respond }) => {
   await respond(`Result: ${a - b}`);
 });
 
-
-
+//mutiply
 app.command("/hbsc-multiply", async ({ command, ack, respond }) => {
   await ack();
 
@@ -83,7 +88,7 @@ app.command("/hbsc-multiply", async ({ command, ack, respond }) => {
 });
 
 
-
+//devide
 app.command("/hbsc-divide", async ({ command, ack, respond }) => {
   await ack();
 
@@ -103,32 +108,7 @@ app.command("/hbsc-divide", async ({ command, ack, respond }) => {
   await respond(`Result: ${a / b}`);
 });
 
-app.command("/hbsc-coinflip", async ({ ack, respond }) => {
-  await ack();
-
-  const result =
-    Math.random() < 0.5 ? "🪙 Heads" : "🪙 Tails";
-
-  await respond(result);
-});
-
-
-app.command("/hbsc-joke", async ({ ack, respond }) => {
-  await ack();
-  console.log("Fetching a joke...");
-  try {
-    const response = await axios.get(
-      "https://official-joke-api.appspot.com/jokes/random",
-    );
-    await respond({
-      text: `Joke: \n${response.data.setup}, ${response.data.punchline}`,
-    });
-    console.log(`joke: ${response.data.setup}`);
-  } catch (err) {
-    await respond({ text: "Failed to fetch a Joke (Partner Server Issue)." });
-    console.log(err);
-  }
-});
+//sum function super easy just add and send respond
 
 app.command("/hbsc-sum", async ({ command, ack, respond }) => {
   await ack();
@@ -147,37 +127,89 @@ app.command("/hbsc-sum", async ({ command, ack, respond }) => {
   await respond(`Result: ${a + b}`);
 });
 
+//coinflip for fun and it easy to make
+app.command("/hbsc-coinflip", async ({ ack, respond }) => {
+  await ack();
+
+  const result =
+    Math.random() < 0.5 ? "🪙 Heads" : "🪙 Tails";
+
+  await respond(result);
+});
+
+//joke function i added a extra one
+
+app.command("/hbsc-joke", async ({ ack, respond }) => {
+  await ack();
+  console.log("Fetching a joke..."); //Print for debugging
+  try {
+    //fetch Public API (FREE)
+    const response = await axios.get(
+      "https://official-joke-api.appspot.com/jokes/random",
+    );
+
+    //After fetching reply to user
+    await respond({
+      text: `Joke: \n${response.data.setup}, ${response.data.punchline}`,
+    });
+    //for developer
+    console.log(`joke: ${response.data.setup}`);
+
+  } catch (err) {
+    //if error come from nowhere then this "catch block" help
+    await respond({ text: "Failed to fetch a Joke (Partner Server Issue)." });
+    console.log(err);
+  }
+});
+
+// same work like hbsc-joke but just different api and name  😊
+
 app.command("/hbsc-funfact", async ({ ack, respond }) => {
   await ack();
   console.log('Fetching A funcFact')
   try {
     const response = await axios.get("https://uselessfacts.jsph.pl/api/v2/facts/random");
+
     console.log(response.data);
+
     await respond(response.data.text)
+
   } catch (err) {
+
     await respond("Failed to fetch a Fun Fact (Partner Server Issue).");
     console.log("Something went wrong", err)
+
   }
 })
 
+//hbsc-weather fetch weather from openmetro and reply to user
+
 app.command("/hbsc-weather", async ({ ack, respond, command }) => {
   try {
-    await ack();
-    const city_name = command.text.trim();
-    if (!city_name) {
+    await ack(); // await ack
+
+    const city_name = command.text.trim(); //trim city name to remove space
+
+    if (!city_name) { //if not provided then throw error
       return await respond(
         "❌ Please provide a city name.\nExample: /hbsc-weather Mumbai"
       );
     }
-    console.log(city_name);
-    const get_city_data = await axios.get(`https://geocoding-api.open-meteo.com/v1/search?name=${city_name}&count=1`);
-    console.log(get_city_data);
 
-    if (!get_city_data.data.results) {
+    console.log(city_name);
+
+
+    const get_city_data = await axios.get(`https://geocoding-api.open-meteo.com/v1/search?name=${city_name}&count=1`); // call api
+
+
+    console.log(get_city_data); //print data on console
+
+    if (!get_city_data.data.results) { //if something went wrong like rate limit or something then throw error
       return respond(
         `❌ Could not find "${city_name}". Please check the spelling and try again.`
       );
     }
+
     //use for debugging
     const latitude = get_city_data.data.results[0].latitude;
     const longitude = get_city_data.data.results[0].longitude;
@@ -234,6 +266,8 @@ Made by Rivaan Maurya (StarDance HackClub)
   }
 })
 
+// my fav one , it give a meme image in return , I made with reddit open API , simple
+
 app.command("/hbsc-meme", async ({ ack, respond }) => {
   await ack();
 
@@ -262,14 +296,22 @@ app.command("/hbsc-meme", async ({ ack, respond }) => {
   }
 });
 
+// very simple but intresting 
+
 app.command("/hbsc-gemini", async ({ command, ack, respond, client }) => {
-  await ack();
-  console.log("Generating response from Gemini...");
+
+  await ack(); // await for ack
+
+  console.log("Generating response from Gemini..."); // print on console
+
   try {
-    const question = command.text.trim();
+
+    const question = command.text.trim(); // trim text for less token use , clever trick  😆
+
     if (!question) {
       return respond(`I Think You Just Call Me! Without Any Question :) 😭`);
     }
+
     await respond("thinking....");
 
     await respond("Generating answer, please wait...");

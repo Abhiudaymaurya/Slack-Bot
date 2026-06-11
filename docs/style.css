@@ -1,8 +1,12 @@
+/* Remove default browser spacing to ensure consistent layouts */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Main dark theme used inthe landing page */
 
 body {
   font-family: Inter, sans-serif;
@@ -11,6 +15,7 @@ body {
   line-height: 1.6;
 }
 
+/* Sticky navigation so important links stay in touch */
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,6 +27,9 @@ nav {
   background: rgba(8, 11, 20, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+
+/* SlackyBOT text shown in the navbar , you can change valur to see*/
 
 .logo {
   font-size: 1.3rem;
