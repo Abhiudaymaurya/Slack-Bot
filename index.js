@@ -296,6 +296,26 @@ app.command("/hbsc-meme", async ({ ack, respond }) => {
   }
 });
 
+//An imple quote genrator
+
+app.command("/hbsc-quote", async ({ command, ack, respond }) => {
+  await ack(); // await for ack
+  console.log("genrating response through quote api")
+
+  try {
+
+    const response = await axios.get("https://dummyjson.com/quotes/random/1");
+
+    const data = response.data;
+    console.log(data);
+    await respond(data[0].quote)
+    await respond(`Author : ${data[0].author}`)
+  } catch (err) {
+    await respond("API is overloaded. Try again later.")
+    console.log(err)
+  }
+})
+
 // very simple but intresting 
 
 app.command("/hbsc-gemini", async ({ command, ack, respond, client }) => {
