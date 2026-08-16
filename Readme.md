@@ -35,25 +35,25 @@ I made SlackyBOT because I wanted to understand how Slack apps and slash command
 
 ---
 
-## 📸 Special Command Previews
+## Special Command Previews
 
-### 📋 Help Command
+### Help Command
 
 ![Help Command](public/images/logo/help-command-image.png)
 
-### 🤖 Gemini AI Response
+### Gemini AI Response
 
 ![Gemini Response](public/images/logo/Gemini-response-image.png)
 
-### 🌤 Weather Report
+### Weather Report
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765155/hbsc-weather_zcu9og.gif)
 
-### 🎭 Meme Generator
+### Meme Generator
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765154/hbsc-meme_vdhrly.gif)
 
-### 🧠 AI Assistant Demo
+### AI Assistant Demo
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765156/hbsc-gemini_a3wxyc.gif)
 
@@ -61,7 +61,7 @@ I made SlackyBOT because I wanted to understand how Slack apps and slash command
 
 ![Meme Response](public/images/logo/meme-response-image.png)
 
-## 🌐 Live Demo & Testing
+## Live Demo & Testing
 
 A public demo workspace is available for testing SlackyBOT.
 
@@ -86,7 +86,7 @@ Have fun trying out SlackyBOT! 🚀
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -157,7 +157,7 @@ This project was created to learn:
 
 ## Made by Rivaan Maurya (Abhiuday Maurya)
 
-## 📄 License
+## License
 
 https://github.com/Abhiudaymaurya/Slack-Bot/blob/main/LICENSE.txt
 
