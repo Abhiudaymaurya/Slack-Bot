@@ -12,7 +12,22 @@
   <img src="public/images/logo/SlackyBOT.png" width="800">
 </p>
 
-I made SlackyBOT because I wanted to understand how Slack apps and slash commands work. Along the way, I added features like Gemini AI, weather updates, memes, jokes, and other small utilities just for fun and learning.
+I made SlackyBOT because I wanted to understand how Slack apps and slash commands work. Along the way, I added features like Gemini AI, weather updates, memes, jokes, and other small commands just for fun and learning.
+
+---
+
+## Why I create this project?
+
+This project was created to learn:
+
+- Slack Bot Development
+- API Integration
+- AI Integration
+- Error Handling
+- Async JavaScript
+- Deploying and hosting applications using Hack Club Nest
+
+---
 
 ## Developed as part of the **StarDance Hack Club** challenge.
 
@@ -57,7 +72,7 @@ I made SlackyBOT because I wanted to understand how Slack apps and slash command
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765156/hbsc-gemini_a3wxyc.gif)
 
-### 😂 Meme Response Example
+###  Meme Response Example
 
 ![Meme Response](public/images/logo/meme-response-image.png)
 
@@ -69,12 +84,11 @@ A public demo workspace is available for testing SlackyBOT.
 
 https://abhiudaymaurya.github.io/Slack-Bot/
 
-### Want to test it?
+### How to test it?
 
 - Open the demo website.
-- Join the Slack workspace.
-- Head over to **#slackybot-demo-stardance**.
-- Type a few commands and have fun experimenting with the bot!
+- Join the Slack HackClub workspace.
+- use commands in any channel.
 
 ### Notes
 
@@ -131,19 +145,6 @@ npm start
 
 ---
 
-## Why I create this project?
-
-This project was created to learn:
-
-- Slack Bot Development
-- API Integration
-- AI Integration
-- Error Handling
-- Async JavaScript
-- Deploying and hosting applications using Hack Club Nest
-
----
-
 ## Resources I Used
 
 - Google Gemini Documentation
@@ -161,4 +162,4 @@ This project was created to learn:
 
 https://github.com/Abhiudaymaurya/Slack-Bot/blob/main/LICENSE.txt
 
-This project is licensed under the MIT License 😊.
+This project is licensed under the MIT License .
