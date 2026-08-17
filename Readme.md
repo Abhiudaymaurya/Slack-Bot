@@ -72,21 +72,16 @@ This project was created to learn:
 
 ![image](https://res.cloudinary.com/danpdjryt/image/upload/v1780765156/hbsc-gemini_a3wxyc.gif)
 
-###  Meme Response Example
+### Meme Response Example
 
 ![Meme Response](public/images/logo/meme-response-image.png)
 
 ## Live Demo & Testing
 
-A public demo workspace is available for testing SlackyBOT.
-
-### Demo Website
-
-https://abhiudaymaurya.github.io/Slack-Bot/
+- Go to hackclub and start trying commands
 
 ### How to test it?
 
-- Open the demo website.
 - Join the Slack HackClub workspace.
 - use commands in any channel.
 
