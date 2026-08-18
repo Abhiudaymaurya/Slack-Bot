@@ -6,7 +6,10 @@
 ![Gemini AI](https://img.shields.io/badge/Google-Gemini-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
 
----
+## Important-
+
+- The reviewer thought the banner image was AI-generated, but I actually created it myself in Canva. Here’s the proof:
+  https://canva.link/ta6t6khrmwuwpps
 
 <p align="center">
   <img src="public/images/logo/SlackyBOT.png" width="800">
